@@ -86,3 +86,17 @@ const swiper4 = new Swiper(".swiper-reviews", {
   },
   modules: [Navigation, Pagination],
 });
+
+const feedbackForm = document.querySelector<HTMLFormElement>(".feedback-form")!;
+const button = document.querySelector<HTMLButtonElement>(".feedback-form__button")!;
+
+feedbackForm.addEventListener("submit", async (event) => {
+  event.preventDefault();
+
+  let response = await fetch("/", {
+    method: "POST",
+    body: new FormData(feedbackForm),
+  });
+
+  response.ok ? (button.textContent = "Отправленно") : (button.textContent = "Отправить повторно");
+});

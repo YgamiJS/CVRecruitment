@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/images/Logo.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CV Recruitment Вакансии</title>
+    <title>CV Recruitment Отправить резюме</title>
   </head>
   <body>
     <header class="header">
@@ -54,11 +54,37 @@
       </div>
     </header>
     <main class="main">
-      <section class="vacancies">
-        <div class="vacancies__container container">
-          <p class="location">Главная <img class="arrow" src="/images/arrow-right-r.svg" alt="Стрелка" /> Вакансии</p>
-          <h1 class="vacancies__h1">ВАКАНСИИ ДЛЯ IT-СПЕЦИАЛИСТОВ</h1>
-          <aside class="aside"></aside>
+      <section class="summary">
+        <div class="summary__container container">
+          <p class="location">
+            Главная <img class="arrow" src="/images/arrow-right-r.svg" alt="Стрелка" /> Отправить резюме
+          </p>
+          <h1 class="summary__h1">ОТПРАВИТЬ РЕЗЮМЕ</h1>
+          <form class="form-summary">
+            <input class="form-summary__name input" name="name" placeholder="ФИО" required />
+            <input class="form-summary__tel input" name="tel" type="tel" placeholder="Телефон" required />
+            <input
+              class="form-summary__email input"
+              name="email"
+              type="email"
+              placeholder="Электронный адрес"
+              required
+            />
+            <div class="file-upload">
+              <label class="file-upload__label input">
+                <input class="form-summary__summary input" name="summary" type="file" required />
+                <span class="file-upload__span">Выберите файл</span>
+              </label>
+            </div>
+            <textarea class="form-summary__comment input" name="comment" placeholder="Комментарий" required></textarea>
+            <p class="form-summary__policy">
+              Нажимая "Отправить" Вы подтверждаете, что даете свое
+              <a class="form-summary__link" href="/CVRecruitment/policy.html"
+                >Cогласие на обработку персональных данных.</a
+              >
+            </p>
+            <button class="form-summary__button purpleButton">Отправить</button>
+          </form>
         </div>
       </section>
     </main>
@@ -91,7 +117,7 @@
         <p class="footer__policy">© Copyright 2023 Сайт компании CV Recruitment - подбор персонала.</p>
       </div>
     </footer>
-    <script type="module" src="/src/ts/vacancies.ts"></script>
+    <script type="module" src="/src/ts/summary.ts"></script>
     <script type="module" src="/src/ts/burger.ts"></script>
   </body>
 </html>

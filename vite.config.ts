@@ -10,6 +10,8 @@ export default defineConfig({
       input: {
         main: path.resolve(__dirname, "index.html"),
         vacancies: path.resolve(__dirname, "vacancies.html"),
+        summary: path.resolve(__dirname, "summary.html"),
+        application: path.resolve(__dirname, "application.html"),
       },
     },
   },

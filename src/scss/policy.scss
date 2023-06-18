@@ -1,0 +1,24 @@
+@import "./varibles.scss";
+
+.policy {
+  margin-bottom: 70px;
+  &__policy {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  &__p {
+    font-weight: 400;
+    @include adaptiv-font(24, 12);
+    @include adaptiv-lineHeight(38, 18);
+  }
+}
+
+.vacancies {
+  &__h1 {
+    font-weight: 400;
+    @include adaptiv-font(36, 14);
+    @include adaptiv-lineHeight(48, 24);
+  }
+}

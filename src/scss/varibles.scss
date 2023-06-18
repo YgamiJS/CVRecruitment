@@ -10,21 +10,17 @@ $purple: #b57ad2;
 $darkPurple: #574279;
 $grey: #cfc6de;
 $gray: #d9d9d9;
+$spacegrey: #716664;
 $maxWidth: 1280;
 
 @mixin adaptiv-font($pcSize, $mobSize) {
   $addSize: $pcSize - $mobSize;
   $maxWidth: $maxWidth - 320;
-  font-size: calc(
-    #{$mobSize + px} + #{calc($addSize / 1.5)} *
-      ((100vw - 320px) / #{$maxWidth})
-  );
+  font-size: calc(#{$mobSize + px} + #{calc($addSize / 1.5)} * ((100vw - 320px) / #{$maxWidth}));
 }
 
 @mixin adaptiv-lineHeight($pcSize, $mobSize) {
   $addSize: $pcSize - $mobSize;
   $maxWidth: $maxWidth - 320;
-  line-height: calc(
-    #{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth})
-  );
+  line-height: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
 }
