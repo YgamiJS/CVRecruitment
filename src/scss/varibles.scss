@@ -1,0 +1,30 @@
+$white: #ffffff;
+$black: #000000;
+$lightPurple: #cfc6de;
+$purple1: #cfc6de;
+$purple5: #7f5f91;
+$purple10: #d8c5f933;
+$purple20: #c397dc;
+$purple30: #4c0877;
+$purple: #b57ad2;
+$darkPurple: #574279;
+$grey: #cfc6de;
+$gray: #d9d9d9;
+$maxWidth: 1280;
+
+@mixin adaptiv-font($pcSize, $mobSize) {
+  $addSize: $pcSize - $mobSize;
+  $maxWidth: $maxWidth - 320;
+  font-size: calc(
+    #{$mobSize + px} + #{calc($addSize / 1.5)} *
+      ((100vw - 320px) / #{$maxWidth})
+  );
+}
+
+@mixin adaptiv-lineHeight($pcSize, $mobSize) {
+  $addSize: $pcSize - $mobSize;
+  $maxWidth: $maxWidth - 320;
+  line-height: calc(
+    #{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth})
+  );
+}

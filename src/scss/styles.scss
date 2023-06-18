@@ -1,0 +1,236 @@
+@import "./varibles.scss";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "DelaGothicOne";
+  src: url("/fonts/DelaGothicOne-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins-Regular.ttf");
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "DelaGothicOne";
+}
+
+body {
+  background: $white;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+  padding: 0 15px;
+}
+
+.header {
+  padding: 30.5px 0;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (max-width: 767px) {
+    padding: 51px 0;
+    &__nav {
+      display: none;
+    }
+
+    .burger {
+      display: flex;
+      order: 1;
+    }
+
+    .logo {
+      order: 2;
+    }
+  }
+}
+
+.logo {
+  display: flex;
+  z-index: 100;
+  gap: 12px;
+  &__logo {
+    width: 74.95px;
+    height: 75px;
+    @media (max-width: 767px) {
+      width: 48.5px;
+      height: 48px;
+    }
+  }
+
+  &__p {
+    color: $purple5;
+    &_small {
+      text-align: right;
+      font-weight: 600;
+      @include adaptiv-font(16, 12);
+      @include adaptiv-lineHeight(24, 16);
+    }
+
+    &_big {
+      font-weight: 700;
+      @include adaptiv-font(32, 20);
+      @include adaptiv-lineHeight(32, 24);
+    }
+  }
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  list-style: none;
+
+  &__link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: $black;
+    text-decoration: none;
+  }
+}
+.burger {
+  display: none;
+  flex-direction: column;
+  z-index: 100;
+  cursor: pointer;
+  gap: 6px;
+  width: 36px;
+  height: 24px;
+  &__line {
+    background: $purple30;
+    border-radius: 2px;
+    width: 100%;
+    height: 4px;
+  }
+}
+
+.overlay {
+  background: $white;
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  z-index: 99;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+}
+
+.overlay.active {
+  display: block;
+}
+
+.overlay.active + .header__container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+
+.overlay.active .menu {
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 50vh;
+}
+
+.main {
+  flex: 1 0 auto;
+}
+
+.purpleButton {
+  background: $darkPurple;
+  backdrop-filter: blur(6px);
+  border-radius: 24px;
+  font-weight: 700;
+  cursor: pointer;
+  color: $white;
+}
+
+.greyButton {
+  background: $lightPurple;
+  backdrop-filter: blur(6px);
+  border-radius: 24px;
+  font-weight: 700;
+  cursor: pointer;
+  color: $black;
+}
+
+.purpleArrow {
+  background: $darkPurple;
+  cursor: pointer;
+}
+
+.input {
+  background: $white;
+  box-shadow: 0px 4px 8px rgba(87, 66, 121, 0.32);
+  border-radius: 24px;
+}
+
+.footer {
+  &__links-block {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    @media (max-width: 767px) {
+      text-align: center;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__links {
+    list-style: none;
+  }
+
+  &__link {
+    font-weight: 400;
+    max-width: 367.83px;
+    width: 100%;
+
+    @include adaptiv-font(24, 12);
+    @include adaptiv-lineHeight(36, 18);
+  }
+
+  &__link-head {
+    font-family: "DelaGothicOne";
+    font-weight: 400;
+    @include adaptiv-font(36, 14);
+    @include adaptiv-lineHeight(52, 20);
+  }
+
+  &__policy {
+    text-align: center;
+    @include adaptiv-font(24, 12);
+    @include adaptiv-lineHeight(36, 18);
+  }
+}
+
+.social-links {
+  display: flex;
+  gap: 15.67px;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+  }
+}
