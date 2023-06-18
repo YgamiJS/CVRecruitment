@@ -224,6 +224,16 @@ body {
     @include adaptiv-font(24, 12);
     @include adaptiv-lineHeight(36, 18);
   }
+
+  &__linka {
+    color: $black;
+    text-decoration: none;
+  }
+
+  &__email {
+    color: $black;
+    text-decoration: none;
+  }
 }
 
 .social-links {

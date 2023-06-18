@@ -9,6 +9,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: path.resolve(__dirname, "index.html"),
+        vacancies: path.resolve(__dirname, "vacancies.html"),
       },
     },
   },
