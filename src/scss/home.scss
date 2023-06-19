@@ -437,8 +437,8 @@ body {
 
   &__policy {
     font-weight: 500;
-    @include adaptiv-font(24, 12);
-    @include adaptiv-lineHeight(36, 18);
+    @include adaptiv-font(16, 12);
+    @include adaptiv-lineHeight(24, 18);
   }
 
   &__link {
@@ -459,8 +459,8 @@ body {
     border: 0;
     outline: none;
     padding: 10px 32px;
-    @include adaptiv-font(20, 16);
-    @include adaptiv-lineHeight(48, 16);
+    @include adaptiv-font(14, 16);
+    @include adaptiv-lineHeight(21, 16);
   }
 
   &__button {

@@ -225,14 +225,15 @@ body {
   &__link-head {
     font-family: "DelaGothicOne";
     font-weight: 400;
-    @include adaptiv-font(36, 14);
-    @include adaptiv-lineHeight(52, 20);
+    @include adaptiv-font(24, 14);
+    @include adaptiv-lineHeight(36, 20);
   }
 
   &__policy {
+    margin: 70px 0 30px 0;
     text-align: center;
-    @include adaptiv-font(24, 12);
-    @include adaptiv-lineHeight(36, 18);
+    @include adaptiv-font(16, 12);
+    @include adaptiv-lineHeight(24, 18);
   }
 
   &__linka {
