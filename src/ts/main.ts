@@ -3,7 +3,7 @@ import "@/scss/index.scss";
 import "@/scss/home.scss";
 import "swiper/swiper-bundle.css";
 
-const swiper = new Swiper(".specialties-list-swiper", {
+new Swiper(".specialties-list-swiper", {
   loop: true,
   navigation: {
     nextEl: ".swiper-button-next-specialties-list",
@@ -12,7 +12,7 @@ const swiper = new Swiper(".specialties-list-swiper", {
   modules: [Navigation],
 });
 
-const swiper2 = new Swiper(".swiper-work-list", {
+new Swiper(".swiper-work-list", {
   navigation: {
     nextEl: ".swiper-button-next-work-list",
     prevEl: ".swiper-button-prev-work-list",
@@ -21,7 +21,7 @@ const swiper2 = new Swiper(".swiper-work-list", {
   modules: [Navigation],
 });
 
-const swiper3 = new Swiper(".swiper-clients", {
+new Swiper(".swiper-clients", {
   loop: true,
   spaceBetween: 15,
   slidesPerView: 4,
@@ -54,7 +54,7 @@ const swiper3 = new Swiper(".swiper-clients", {
   modules: [Navigation, Pagination],
 });
 
-const swiper4 = new Swiper(".swiper-reviews", {
+new Swiper(".swiper-reviews", {
   loop: true,
   spaceBetween: 20,
   slidesPerView: 4,

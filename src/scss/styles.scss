@@ -248,6 +248,7 @@ body {
 
 .social-links {
   display: flex;
+  align-items: center;
   gap: 15.67px;
 
   @media (max-width: 767px) {
