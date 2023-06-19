@@ -121,6 +121,11 @@ body {
       margin-right: 16px;
       width: 13px;
       height: 13px;
+
+      @media (max-width: 767px) {
+        width: 10px;
+        height: 10px;
+      }
     }
   }
 

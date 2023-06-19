@@ -58,56 +58,70 @@
         <div class="vacancies__container container">
           <p class="location">Главная <img class="arrow" src="/images/arrow-right-r.svg" alt="Стрелка" /> Вакансии</p>
           <h1 class="vacancies__h1">ВАКАНСИИ ДЛЯ IT-СПЕЦИАЛИСТОВ</h1>
-          <aside class="aside">
-            <h2 class="aside__h2">Специальности</h2>
-            <ul class="list-dev">
-              <li class="list-dev__item list-dev__item-head">Разработка</li>
-              <li class="list-dev__item">Android</li>
-              <li class="list-dev__item">C/C++</li>
-              <li class="list-dev__item">IOS</li>
-              <li class="list-dev__item">Java</li>
-              <li class="list-dev__item">JavaScript</li>
-              <li class="list-dev__item">Perl</li>
-              <li class="list-dev__item">Python</li>
-              <li class="list-dev__item">Другое</li>
+          <div class="vacancies-block">
+            <button class="filter">
+              <span class="filter__span">Фильтр</span>
+              <img class="filter__icon" src="/images/arrowDown.svg" alt="" />
+            </button>
+            <aside class="aside">
+              <p class="aside__h2">Специальности</p>
+              <p class="aside__p">Разработка</p>
+              <ul class="list-dev">
+                <li class="list-dev__item"><span class="list-dev__span">Android</span></li>
+                <li class="list-dev__item"><span class="list-dev__span">C/C++</span></li>
+                <li class="list-dev__item"><span class="list-dev__span">IOS</span></li>
+                <li class="list-dev__item"><span class="list-dev__span">Java</span></li>
+                <li class="list-dev__item"><span class="list-dev__span">JavaScript</span></li>
+                <li class="list-dev__item"><span class="list-dev__span">Perl</span></li>
+                <li class="list-dev__item"><span class="list-dev__span">Python</span></li>
+                <li class="list-dev__item"><span class="list-dev__span">Другое</span></li>
+              </ul>
+              <p class="aside__p">Тестирование</p>
+              <p class="aside__p">Поддержка IT</p>
+              <p class="aside__p">DevOps / эксплуатация</p>
+              <p class="aside__p">Аналитика</p>
+            </aside>
+            <ul class="vacancies-list">
+              <li class="vacancies-list__vanacie">
+                <h1 class="vacancies-list__h1">Frontend разработчик</h1>
+                <p class="vacancies-list__p">Обязанности</p>
+                <ul class="vacancies-list__responsibilities">
+                  <li class="vacancies-list__responsibilitie">
+                    <span class="vacancies-list__span">Разработка системы</span>
+                  </li>
+                  <li class="vacancies-list__responsibilitie">
+                    <span class="vacancies-list__span">Сбор, анализ информации, нахождение взаимосвязей</span>
+                  </li>
+                  <li class="vacancies-list__responsibilitie">
+                    <span class="vacancies-list__span"
+                      >Построение графа связей, их визуализация и экспорт в различные форматы</span
+                    >
+                  </li>
+                  <li class="vacancies-list__responsibilitie">
+                    <span class="vacancies-list__span"> Написание и поддержка нетривиальной бизнес-логики.</span>
+                  </li>
+                </ul>
+                <p class="vacancies-list__p">Требования</p>
+                <ul class="vacancies-list__requirements">
+                  <li class="vacancies-list__requirement">
+                    <span class="vacancies-list__span">Опыт работы с Vue3</span>
+                  </li>
+                  <li class="vacancies-list__requirement">
+                    <span class="vacancies-list__span">Опыт разработки на Typescript </span>
+                  </li>
+                  <li class="vacancies-list__requirement">
+                    <span class="vacancies-list__span"
+                      >Понимание принципов проектирования ПО. SOLID, основные паттерны</span
+                    >
+                  </li>
+                  <li class="vacancies-list__requirement">
+                    <span class="vacancies-list__span"> Опыт взаимодействия с внешними API </span>
+                  </li>
+                </ul>
+                <a class="vacancies-list__link purpleButton" href="#">Связаться с работодателем</a>
+              </li>
             </ul>
-            <p class="aside__p">Тестирование</p>
-            <p class="aside__p">Поддержка IT</p>
-            <p class="aside__p">DevOps / эксплуатация</p>
-            <p class="aside__p">Аналитика</p>
-            <h2 class="aside__h2 cities">Города</h2>
-            <ul class="cities">
-              <li class="cities__city">
-                <input class="cities__checkbox" type="checkbox" id="c1" />
-                <label class="cities__label" for="c1"></label>
-                Екатеринбург
-              </li>
-              <li class="cities__city">
-                <input class="cities__checkbox" type="checkbox" id="c2" />
-                <label class="cities__label" for="c2"></label>
-                Иннополис
-              </li>
-              <li class="cities__city">
-                <input class="cities__checkbox" type="checkbox" id="c3" />
-                <label class="cities__label" for="c3"></label>
-                Москва
-              </li>
-              <li class="cities__city">
-                <input class="cities__checkbox" type="checkbox" id="c4" />
-                <label class="cities__label" for="c4"></label>
-                Рязан
-              </li>
-              <li class="cities__city">
-                <input class="cities__checkbox" type="checkbox" id="c5" />
-                <label class="cities__label" for="c5"></label>
-                Санкт-Петербург
-              </li>
-            </ul>
-            <div class="buttons">
-              <button class="buttons__button purpleButton">Показать</button>
-              <button class="buttons__button greyButton">Сбросить</button>
-            </div>
-          </aside>
+          </div>
         </div>
       </section>
     </main>

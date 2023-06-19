@@ -129,6 +129,9 @@ body {
   display: flex;
   align-items: center;
   gap: 12.17px;
+  font-weight: 500;
+  @include adaptiv-font(20, 12);
+  @include adaptiv-lineHeight(30, 18);
 }
 
 .overlay {
