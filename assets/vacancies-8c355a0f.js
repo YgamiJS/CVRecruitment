@@ -1,0 +1,1 @@
+import"./burger-14872f71.js";document.querySelector(".vacancies-list");const e=document.querySelector(".aside"),t=document.querySelector(".filter");t.addEventListener("click",()=>{e.classList.toggle("active")});
